@@ -12,6 +12,12 @@ dotenv.config();
 const PORT = process.env.PORT || 4000;
 
 app.use(cors());
+app.use(cors({
+    origin: "https://your-vercel-frontend.vercel.app", // exact URL of frontend
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+}));
+
 app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URI)
