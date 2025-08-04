@@ -1,0 +1,48 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build directories
+/dist
+/build
+
+# Environment variables
+.env
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Optional: npm or yarn lock
+# Uncomment one if you're using only one package manager
+# package-lock.json
+# yarn.lock
+
+# React test coverage
+/coverage
+
+# Optional: MongoDB dump files
+*.gz
+*.dump
+
+# Misc
+*.tgz
+
+# Optional: Next.js (in case you're using it instead of plain React)
+/.next
+
+# Optional: debug folders
+npm-debug.log
+yarn-debug.log
+.pnpm-debug.log
