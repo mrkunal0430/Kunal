@@ -13,7 +13,8 @@ const PORT = process.env.PORT || 4000;
 
 app.use(cors());
 app.use(cors({
-    origin: "https://todoapp-pjevbvrks-kunal-vermas-projects-48fd8a01.vercel.app/", // exact URL of frontend
+    origin: ["https://todoapp-pjevbvrks-kunal-vermas-projects-48fd8a01.vercel.app/",
+        "https://todoapp-ruby-nine.vercel.app/"], // exact URL of frontend
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 }));
